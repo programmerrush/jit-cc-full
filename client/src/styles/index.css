@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reusable glass panel */
+.glass { @apply bg-glass backdrop-blur-xl border border-white/10 rounded-2xl; }
+
+/* Custom scrollbars */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6d28d9 0%, #2563eb 100%);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
+
+/* Typing caret */
+.typing-caret { position: relative; }
+.typing-caret::after {
+  content: ''; position: absolute; width: 8px; height: 18px;
+  background: #a5b4fc; margin-left: 6px; top: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+/* Custom dropdown styling */
+.dropdown {
+  background-color: transparent;
+  border: 1px solid #ffffff33;
+  color: #060000;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: #ffffff1a; /* Highlight on hover */
+}
+
+.dropdown option {
+  background-color: transparent;
+  color: #9c1f1f;
+}
+
+.dropdown option:hover {
+  background-color: #1a1a1a;
+  color: #2913a6;
+}
+/* Make dropdowns transparent and style on hover */
+.dropdown {
+  background-color: transparent;
+  color: #cfd7c7;
+  border: 1px solid #ffffff33;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: #ffffff1a; /* Light background when hovering */
+}
+
+.dropdown option {
+  background-color: transparent;
+  color: #a31b7a;
+}
+
+.dropdown option:hover {
+  background-color: #1a1a1a;
+  color: #eaece6;
+}

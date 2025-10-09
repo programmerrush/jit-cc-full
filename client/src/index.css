@@ -1,0 +1,30 @@
+/* Glass effect */
+.backdrop-blur-lg {
+  backdrop-filter: blur(20px);
+}
+
+/* Glowing Aura effect */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(99, 102, 241, 0.4);
+}
+
+/* Input field */
+textarea {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal container adjustments */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #6c5ce7, #8e44ad);
+}
